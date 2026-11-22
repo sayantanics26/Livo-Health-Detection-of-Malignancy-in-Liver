@@ -1,0 +1,22 @@
+{
+    "model_name": "SMC-LUD EfficientNetB3 Baseline",
+    "model_file": "smc_efficientnetb3_baseline.keras",
+    "input_size": [
+        300,
+        300
+    ],
+    "color_mode": "RGB",
+    "pixel_range": [
+        0,
+        255
+    ],
+    "resize_method": "bilinear",
+    "preserve_aspect_ratio": false,
+    "class_mapping": {
+        "Hemangioma": 0,
+        "HCC": 1
+    },
+    "output_activation": "sigmoid",
+    "classification_threshold": 0.5,
+    "research_only": true
+}

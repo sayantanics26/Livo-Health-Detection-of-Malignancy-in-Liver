@@ -1,0 +1,37 @@
+:root{font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif;color:#263f4c;background:#f3f8f9}*{box-sizing:border-box}body{margin:0}.nav{display:flex;justify-content:space-between;align-items:center;padding:22px max(24px,calc((100vw - 1040px)/2));background:#fff;border-bottom:1px solid #c4dbde}.brand{font-size:23px;font-weight:800;letter-spacing:-.8px}.brand-mark{color:#558d97}.tag{font-size:12px;background:#c4dbde;color:#3d6176;padding:8px 13px;border-radius:30px}.container{max-width:940px;margin:58px auto;padding:0 22px}.intro{max-width:720px;margin-bottom:35px}.eyebrow{font-size:11px;letter-spacing:2px;color:#558d97;font-weight:800}h1{font-size:clamp(34px,5vw,52px);letter-spacing:-2px;line-height:1.12;margin:13px 0}p{line-height:1.7;color:#526f7b}.panel{background:white;border:1px solid #c4dbde;border-radius:22px;padding:34px;box-shadow:0 18px 50px #3d61761a}.section-heading{display:flex;justify-content:space-between;align-items:center}.section-heading h2{margin:0;font-size:23px}.section-heading p{margin:5px 0 22px;font-size:14px}.step{font-size:12px;color:#558d97}.dropzone{cursor:pointer;min-height:230px;border:2px dashed #95bfc8;border-radius:16px;background:#eef6f7;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:9px;text-align:center}.dropzone.drag{background:#c4dbde;border-color:#558d97}.dropzone span{color:#526f7b;font-size:14px}.upload-icon{display:grid;place-items:center;width:48px;height:48px;border-radius:13px;background:#c4dbde;color:#3d6176;font-size:27px}.dropzone input{display:none}.preview{display:flex;align-items:center;gap:16px;margin:20px 0;color:#526f7b;overflow-wrap:anywhere}.preview img{max-height:150px;max-width:160px;object-fit:contain;border-radius:9px;background:#111}button{margin-top:20px;width:100%;border:0;border-radius:12px;background:#3d6176;color:white;font-weight:700;font-size:16px;padding:16px;cursor:pointer;display:flex;justify-content:space-between}button:disabled{background:#95bfc8;cursor:not-allowed}#status{font-size:14px;margin-bottom:0}.result{margin-top:26px;border-top:1px solid #c4dbde;padding-top:25px}.result h3{font-size:26px;margin:10px 0 22px}.score-row{display:flex;justify-content:space-between;font-size:14px;margin:15px 0 7px}.meter{height:9px;background:#c4dbde;border-radius:9px;overflow:hidden}.meter>div{height:100%;width:0;background:#3d6176;border-radius:9px}.note{font-size:12px}.warning{margin-top:22px;background:#eef6f7;border:1px solid #95bfc8;border-radius:14px;padding:18px 22px}.warning strong{color:#3d6176}.warning p{font-size:13px;margin-bottom:0}footer{text-align:center;font-size:12px;color:#558d97;padding:35px}.hidden{display:none!important}@media(max-width:600px){.container{margin-top:35px}.panel{padding:20px}.nav{padding:18px 20px}}
+
+/* LivoHealth ocean-blue palette: #C4DBDE · #95BFC8 · #558D97 · #3D6176 */
+button:hover:not(:disabled){background:#2d4d61}
+.dropzone:hover{background:#e3f0f2;border-color:#558d97}
+button:focus-visible,.dropzone:focus-within{outline:3px solid #95bfc8;outline-offset:3px}
+
+/* Accessibility enhancement: high-contrast typography while preserving palette. */
+:root { color: #172d39; }
+body { color: #172d39; }
+h1, h2, h3, .brand, .dropzone strong, .score-row, .score-row strong { color: #172d39; }
+p, .section-heading p, .dropzone span, .preview, .note, .warning p, #status { color: #284451; }
+.eyebrow, .step, footer, .tag, .warning strong { color: #274c60; }
+.dropzone { color: #172d39; }
+button { color: #ffffff; }
+button:disabled { background: #547d88; color: #ffffff; }
+
+
+/* Requested medical website palette: all text black, existing content unchanged. */
+:root { color: #000000; background: #FAFAFD; }
+body { color: #000000; background: #FAFAFD; }
+.container { color: #000000; }
+h1,h2,h3,p,span,strong,footer,.eyebrow,.step,.section-heading p,.dropzone strong,.dropzone span,.preview,.note,.warning p,.warning strong,#status,.score-row,.score-row strong,.tag { color: #000000; }
+.eyebrow { background: #EEEFFD; padding: 8px 12px; border-left: 4px solid #5B65DC; display: inline-block; border-radius: 3px; }
+.panel { background: #FFFFFF; border: 1px solid #EEEFFD; border-top: 5px solid #122056; box-shadow: 0 16px 46px #12205614; }
+.dropzone { background: #EEEFFD; border: 2px dashed #5B65DC; color: #000000; }
+.dropzone:hover,.dropzone.drag { background: #e1e4ff; border-color: #122056; }
+.upload-icon { background: #FFFFFF; color: #000000; border: 1px solid #5B65DC; }
+button,button:disabled { background: #5B65DC; color: #000000; }
+button:hover:not(:disabled) { background: #bfc4ff; color: #000000; }
+button:disabled { background: #EEEFFD; color: #000000; opacity: .75; }
+button:focus-visible,.dropzone:focus-within { outline: 3px solid #122056; outline-offset: 3px; }
+.result { border-top-color: #EEEFFD; }
+.meter { background: #EEEFFD; }
+.meter>div { background: #5B65DC; }
+.warning { background: #EEEFFD; border: 1px solid #5B65DC; border-left: 5px solid #122056; }
+footer { background: #FFFFFF; color: #000000; border-top: 1px solid #EEEFFD; }
