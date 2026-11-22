@@ -16,8 +16,17 @@ CONFIG_FILE = MODEL_DIR / 'model_config.json'
 MAX_UPLOAD_BYTES = 10 * 1024 * 1024
 
 app = FastAPI(title='LivoHealth Research API', version='0.1.0')
-app.add_middleware(CORSMiddleware, allow_origins=['http://localhost:5500', 'http://127.0.0.1:5500', 'http://localhost:8000', 'http://127.0.0.1:8000'], allow_credentials=False, allow_methods=['GET', 'POST'], allow_headers=['*'])
-
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=[
+        "http://localhost:5500",
+        "http://127.0.0.1:5500",
+        "livo-health-detection-of-malignancy.vercel.app"
+    ],
+    allow_credentials=False,
+    allow_methods=["GET", "POST"],
+    allow_headers=["*"]
+)
 model = None
 config = None
 
