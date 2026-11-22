@@ -1,4 +1,4 @@
-const API_URL = 'http://127.0.0.1:8000';
+const API_URL = 'https://livohealth-backend.onrender.com';
 const input = document.getElementById('imageInput');
 const zone = document.getElementById('dropzone');
 const button = document.getElementById('analyzeBtn');
